@@ -1,0 +1,14 @@
+mnorval@gmail.com
+Orphxxx@xx7
+
+michaelnorval
+
+
+Name:			howzit_android
+Token ID:		7FD4096E311C4025A598A36A271B2AAF-01-8
+Token Secret:	XHP49qZYT6boHZytcGFagBs6luzIo
+Basic Auth:		Authorization: Basic N0ZENDA5NkUzMTFDNDAyNUE1OThBMzZBMjcxQjJBQUYtMDEtODpYSFA0OXFaWVQ2Ym9IWnl0Y0dGYWdCczZsdXpJbw==
+
+
+
+http://bulksms.2way.co.za/eapi/submission/send_sms/2/2.0?username=michaelnorval&password=Orpheus@007&message=Hi+Mom+%26+Dad&msisdn=27829040797

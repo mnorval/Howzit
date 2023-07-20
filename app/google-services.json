@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "491676024282",
+    "firebase_url": "https://howzit-e18cf.firebaseio.com",
+    "project_id": "howzit-e18cf",
+    "storage_bucket": "howzit-e18cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491676024282:android:7ac27571a71881c88c94e3",
+        "android_client_info": {
+          "package_name": "com.michaelnorval.howzit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491676024282-sb2i1leo9ugaa6ap54a33m5rt13q1ink.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5XljxGs6xLiLHVibQpQlL37r9GOjun2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491676024282-sb2i1leo9ugaa6ap54a33m5rt13q1ink.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
