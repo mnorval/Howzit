@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--
+    android:background="@drawable/background_gradient"
+     -->
+
+
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="231dp"
+        android:layout_height="45dp"
+        android:visibility="visible"
+        app:ccp_countryPreference="us,in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text">
+
+    </com.hbb20.CountryCodePicker>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="346dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Enter phone number"
+        android:textSize="30dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_carrierNumber"
+        android:layout_width="231dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:editable="false"
+        android:hint="phone"
+        android:textColor="@color/colorTextBox"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ccp" />
+
+    <EditText
+        android:id="@+id/OTP_Password_editText"
+        android:layout_width="232dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="otp code"
+        android:textColor="@color/colorTextBox"
+        android:inputType="numberPassword"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_carrierNumber" />
+
+    <EditText
+        android:id="@+id/Nickname_editText"
+        android:layout_width="232dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="name"
+        android:textColor="@color/colorTextBox"
+        android:inputType="text"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OTP_Password_editText" />
+
+
+    <Button
+        android:id="@+id/OTP_button"
+        android:layout_width="169dp"
+        android:layout_height="52dp"
+        android:text="Send OTP"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nickname_editText" />
+
+    <Button
+        android:id="@+id/Register_Number_button"
+        android:layout_width="171dp"
+        android:layout_height="55dp"
+        android:text="Register Number"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OTP_button" />
+
+    <Button
+        android:id="@+id/Register_Name_Finish_button"
+        android:layout_width="171dp"
+        android:layout_height="55dp"
+        android:text="Finish"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Number_button" />
+
+    <ImageView
+        android:id="@+id/Register_ImageView"
+        android:layout_width="130dp"
+        android:layout_height="92dp"
+        android:alpha="0.7"
+        android:contentDescription="@string/nav_header_desc"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:layout_column="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register_Name_Finish_button"
+        app:layout_constraintVertical_bias="0.188"
+        app:layout_row="0"
+        app:srcCompat="@drawable/ic_launcher" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

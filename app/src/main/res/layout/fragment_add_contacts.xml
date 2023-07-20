@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Contacts.ContactsFragment">
+
+    <ListView
+        android:id="@+id/core_list"
+        android:layout_width="374dp"
+        android:layout_height="436dp"
+        android:layout_marginTop="8dp"
+        android:divider="#BDD8F5"
+        android:dividerHeight="2dp"
+        android:listSelector="#3772F9"
+        android:longClickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Contacts_Filter_EditText" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Contacts_Add_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="17dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Contacts_Filter_EditText"
+        android:layout_width="316dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:hint="Type number/name to filter....."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="352dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Contacts_Button_All"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="All"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/Contacts_Button_Registered"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+            android:text="Registered"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/Contacts_Button_Not_Registered"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:text="Not Registered"
+
+            app:layout_column="4"
+            app:layout_row="0" />
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

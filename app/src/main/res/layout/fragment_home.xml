@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.Home.HomeFragment">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/home_arrow"
+        android:layout_width="111dp"
+        android:layout_height="75dp"
+        android:rotation="-125"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <ListView
+        android:id="@+id/listview_favourites"
+        android:layout_width="341dp"
+        android:layout_height="526dp"
+        android:divider="#BDD8F5"
+        android:dividerHeight="2dp"
+        android:listSelector="#3772F9"
+        android:longClickable="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064">
+
+
+    </ListView>
+
+    <WebView
+        android:id="@+id/webview_favourites"
+        android:layout_width="350dp"
+        android:layout_height="384dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/listview_favourites" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
